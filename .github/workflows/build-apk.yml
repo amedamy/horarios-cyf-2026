@@ -4,6 +4,11 @@ on:
   workflow_dispatch:
   push:
     branches: [ build-android-apk ]
+    paths-ignore:
+      - 'instaladores/**'
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -22,20 +27,29 @@ jobs:
           gradle-version: '8.9'
       - name: Extraer proyecto
         run: |
+          rm -rf proyecto
           mkdir proyecto
           unzip -q proyecto_android_fuente.zip -d proyecto
       - name: Compilar APK
         working-directory: proyecto
         run: gradle :app:assembleDebug --stacktrace
-      - name: Reunir instaladores
+      - name: Reunir y validar 19 instaladores
         run: |
-          mkdir -p dist
-          find proyecto/app/build/outputs/apk -type f -name '*-debug.apk' -exec cp {} dist/ \;
+          rm -rf instaladores
+          mkdir -p instaladores
+          find proyecto/app/build/outputs/apk -type f -name '*-debug.apk' -exec cp {} instaladores/ \;
           echo "APK generados:"
-          ls -lh dist
-          test "$(find dist -type f -name '*.apk' | wc -l)" -eq 19
+          ls -lh instaladores
+          test "$(find instaladores -type f -name '*.apk' | wc -l)" -eq 19
+      - name: Publicar APK en la rama de compilación
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- instaladores/*.apk
+          git commit -m "Publicar 19 APK docentes" || exit 0
+          git push origin HEAD:build-android-apk
       - uses: actions/upload-artifact@v4
         with:
           name: Instaladores-Android-Docentes-CyF-02-2026
-          path: dist/*.apk
+          path: instaladores/*.apk
           retention-days: 30
