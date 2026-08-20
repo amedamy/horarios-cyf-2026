@@ -44,6 +44,11 @@ public class MainActivity extends Activity {
 
     public class AndroidBridge {
         @JavascriptInterface
+        public String getPackageId() {
+            return getPackageName();
+        }
+
+        @JavascriptInterface
         public void toast(final String message) {
             runOnUiThread(() -> Toast.makeText(MainActivity.this, message, Toast.LENGTH_LONG).show());
         }
