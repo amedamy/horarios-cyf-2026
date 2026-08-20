@@ -25,19 +25,13 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
-      - name: Extraer proyecto
-        run: |
-          rm -rf proyecto
-          mkdir proyecto
-          unzip -q proyecto_android_fuente.zip -d proyecto
-      - name: Compilar APK
-        working-directory: proyecto
+      - name: Compilar 19 APK
         run: gradle :app:assembleDebug --stacktrace
       - name: Reunir y validar 19 instaladores
         run: |
           rm -rf instaladores
           mkdir -p instaladores
-          find proyecto/app/build/outputs/apk -type f -name '*-debug.apk' -exec cp {} instaladores/ \;
+          find app/build/outputs/apk -type f -name '*-debug.apk' -exec cp {} instaladores/ \;
           echo "APK generados:"
           ls -lh instaladores
           test "$(find instaladores -type f -name '*.apk' | wc -l)" -eq 19
