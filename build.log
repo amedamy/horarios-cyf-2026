@@ -1,0 +1,877 @@
+
+Welcome to Gradle 8.9!
+
+Here are the highlights of this release:
+ - Enhanced Error and Warning Messages
+ - IDE Integration Improvements
+ - Daemon JVM Information
+
+For more details see https://docs.gradle.org/8.9/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preAlbertoMoralesColqueDebugBuild UP-TO-DATE
+> Task :app:mergeAlbertoMoralesColqueDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileAlbertoMoralesColqueDebug
+> Task :app:checkAlbertoMoralesColqueDebugAarMetadata
+> Task :app:generateAlbertoMoralesColqueDebugResValues
+> Task :app:mapAlbertoMoralesColqueDebugSourceSetPaths
+> Task :app:generateAlbertoMoralesColqueDebugResources
+> Task :app:packageAlbertoMoralesColqueDebugResources
+> Task :app:mergeAlbertoMoralesColqueDebugResources
+> Task :app:createAlbertoMoralesColqueDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksAlbertoMoralesColqueDebug
+> Task :app:parseAlbertoMoralesColqueDebugLocalResources
+> Task :app:processAlbertoMoralesColqueDebugMainManifest
+> Task :app:processAlbertoMoralesColqueDebugManifest
+> Task :app:mergeAlbertoMoralesColqueDebugShaders
+> Task :app:compileAlbertoMoralesColqueDebugShaders NO-SOURCE
+> Task :app:generateAlbertoMoralesColqueDebugAssets UP-TO-DATE
+> Task :app:mergeAlbertoMoralesColqueDebugAssets
+> Task :app:desugarAlbertoMoralesColqueDebugFileDependencies
+> Task :app:compressAlbertoMoralesColqueDebugAssets
+> Task :app:processAlbertoMoralesColqueDebugJavaRes NO-SOURCE
+> Task :app:processAlbertoMoralesColqueDebugManifestForPackage
+> Task :app:mergeAlbertoMoralesColqueDebugJavaResource
+> Task :app:checkAlbertoMoralesColqueDebugDuplicateClasses
+> Task :app:mergeAlbertoMoralesColqueDebugJniLibFolders
+> Task :app:mergeAlbertoMoralesColqueDebugNativeLibs NO-SOURCE
+> Task :app:stripAlbertoMoralesColqueDebugDebugSymbols NO-SOURCE
+> Task :app:mergeLibDexAlbertoMoralesColqueDebug
+> Task :app:mergeExtDexAlbertoMoralesColqueDebug
+> Task :app:processAlbertoMoralesColqueDebugResources
+> Task :app:validateSigningAlbertoMoralesColqueDebug
+
+> Task :app:compileAlbertoMoralesColqueDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderAlbertoMoralesColqueDebug
+> Task :app:mergeAlbertoMoralesColqueDebugGlobalSynthetics
+> Task :app:writeAlbertoMoralesColqueDebugAppMetadata
+> Task :app:writeAlbertoMoralesColqueDebugSigningConfigVersions
+> Task :app:preAlexMedinaceliDebugBuild UP-TO-DATE
+> Task :app:mergeAlexMedinaceliDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileAlexMedinaceliDebug
+> Task :app:checkAlexMedinaceliDebugAarMetadata
+> Task :app:generateAlexMedinaceliDebugResValues
+> Task :app:mapAlexMedinaceliDebugSourceSetPaths
+> Task :app:generateAlexMedinaceliDebugResources
+> Task :app:mergeAlexMedinaceliDebugResources
+> Task :app:packageAlexMedinaceliDebugResources
+> Task :app:mergeProjectDexAlbertoMoralesColqueDebug
+> Task :app:parseAlexMedinaceliDebugLocalResources
+> Task :app:createAlexMedinaceliDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksAlexMedinaceliDebug
+> Task :app:processAlexMedinaceliDebugMainManifest
+> Task :app:processAlexMedinaceliDebugManifest
+> Task :app:mergeAlexMedinaceliDebugShaders
+> Task :app:compileAlexMedinaceliDebugShaders NO-SOURCE
+> Task :app:generateAlexMedinaceliDebugAssets UP-TO-DATE
+> Task :app:mergeAlexMedinaceliDebugAssets
+> Task :app:processAlexMedinaceliDebugManifestForPackage
+> Task :app:compressAlexMedinaceliDebugAssets
+> Task :app:desugarAlexMedinaceliDebugFileDependencies
+> Task :app:processAlexMedinaceliDebugJavaRes NO-SOURCE
+> Task :app:mergeAlexMedinaceliDebugJavaResource
+> Task :app:checkAlexMedinaceliDebugDuplicateClasses
+> Task :app:mergeAlexMedinaceliDebugJniLibFolders
+> Task :app:mergeExtDexAlexMedinaceliDebug
+> Task :app:mergeAlexMedinaceliDebugNativeLibs NO-SOURCE
+> Task :app:stripAlexMedinaceliDebugDebugSymbols NO-SOURCE
+> Task :app:mergeLibDexAlexMedinaceliDebug
+> Task :app:validateSigningAlexMedinaceliDebug
+> Task :app:writeAlexMedinaceliDebugAppMetadata
+> Task :app:packageAlbertoMoralesColqueDebug
+> Task :app:createAlbertoMoralesColqueDebugApkListingFileRedirect
+> Task :app:assembleAlbertoMoralesColqueDebug
+> Task :app:writeAlexMedinaceliDebugSigningConfigVersions
+> Task :app:preAnaMariaOrosDebugBuild UP-TO-DATE
+> Task :app:mergeAnaMariaOrosDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileAnaMariaOrosDebug
+> Task :app:checkAnaMariaOrosDebugAarMetadata
+> Task :app:generateAnaMariaOrosDebugResValues
+> Task :app:mapAnaMariaOrosDebugSourceSetPaths
+> Task :app:generateAnaMariaOrosDebugResources
+> Task :app:mergeAnaMariaOrosDebugResources
+> Task :app:packageAnaMariaOrosDebugResources
+> Task :app:createAnaMariaOrosDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksAnaMariaOrosDebug
+> Task :app:parseAnaMariaOrosDebugLocalResources
+> Task :app:processAnaMariaOrosDebugMainManifest
+> Task :app:processAnaMariaOrosDebugManifest
+> Task :app:processAlexMedinaceliDebugResources
+> Task :app:processAnaMariaOrosDebugManifestForPackage
+
+> Task :app:compileAlexMedinaceliDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderAlexMedinaceliDebug
+> Task :app:mergeAlexMedinaceliDebugGlobalSynthetics
+> Task :app:mergeAnaMariaOrosDebugShaders
+> Task :app:compileAnaMariaOrosDebugShaders NO-SOURCE
+> Task :app:generateAnaMariaOrosDebugAssets UP-TO-DATE
+> Task :app:mergeProjectDexAlexMedinaceliDebug
+> Task :app:mergeAnaMariaOrosDebugAssets
+> Task :app:desugarAnaMariaOrosDebugFileDependencies
+> Task :app:compressAnaMariaOrosDebugAssets
+> Task :app:processAnaMariaOrosDebugJavaRes NO-SOURCE
+> Task :app:mergeAnaMariaOrosDebugJavaResource
+> Task :app:checkAnaMariaOrosDebugDuplicateClasses
+> Task :app:mergeAnaMariaOrosDebugJniLibFolders
+> Task :app:packageAlexMedinaceliDebug
+> Task :app:createAlexMedinaceliDebugApkListingFileRedirect
+> Task :app:assembleAlexMedinaceliDebug
+> Task :app:mergeExtDexAnaMariaOrosDebug
+> Task :app:mergeAnaMariaOrosDebugNativeLibs NO-SOURCE
+> Task :app:stripAnaMariaOrosDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningAnaMariaOrosDebug
+> Task :app:mergeLibDexAnaMariaOrosDebug
+> Task :app:writeAnaMariaOrosDebugAppMetadata
+> Task :app:writeAnaMariaOrosDebugSigningConfigVersions
+> Task :app:preCelsoFuertesDebugBuild UP-TO-DATE
+> Task :app:mergeCelsoFuertesDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileCelsoFuertesDebug
+> Task :app:checkCelsoFuertesDebugAarMetadata
+> Task :app:generateCelsoFuertesDebugResValues
+> Task :app:mapCelsoFuertesDebugSourceSetPaths
+> Task :app:generateCelsoFuertesDebugResources
+> Task :app:mergeCelsoFuertesDebugResources
+> Task :app:packageCelsoFuertesDebugResources
+> Task :app:processAnaMariaOrosDebugResources
+> Task :app:createCelsoFuertesDebugCompatibleScreenManifests
+> Task :app:parseCelsoFuertesDebugLocalResources
+
+> Task :app:compileAnaMariaOrosDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderAnaMariaOrosDebug
+> Task :app:mergeAnaMariaOrosDebugGlobalSynthetics
+> Task :app:extractDeepLinksCelsoFuertesDebug
+> Task :app:mergeProjectDexAnaMariaOrosDebug
+> Task :app:processCelsoFuertesDebugMainManifest
+> Task :app:processCelsoFuertesDebugManifest
+> Task :app:mergeCelsoFuertesDebugShaders
+> Task :app:processCelsoFuertesDebugManifestForPackage
+> Task :app:compileCelsoFuertesDebugShaders NO-SOURCE
+> Task :app:packageAnaMariaOrosDebug
+> Task :app:createAnaMariaOrosDebugApkListingFileRedirect
+> Task :app:assembleAnaMariaOrosDebug
+> Task :app:generateCelsoFuertesDebugAssets UP-TO-DATE
+> Task :app:mergeCelsoFuertesDebugAssets
+> Task :app:compressCelsoFuertesDebugAssets
+> Task :app:desugarCelsoFuertesDebugFileDependencies
+> Task :app:processCelsoFuertesDebugJavaRes NO-SOURCE
+> Task :app:mergeCelsoFuertesDebugJavaResource
+> Task :app:checkCelsoFuertesDebugDuplicateClasses
+> Task :app:mergeCelsoFuertesDebugJniLibFolders
+> Task :app:mergeExtDexCelsoFuertesDebug
+> Task :app:mergeLibDexCelsoFuertesDebug
+> Task :app:mergeCelsoFuertesDebugNativeLibs NO-SOURCE
+> Task :app:stripCelsoFuertesDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningCelsoFuertesDebug
+> Task :app:writeCelsoFuertesDebugAppMetadata
+> Task :app:writeCelsoFuertesDebugSigningConfigVersions
+> Task :app:preDavidOrtunoChicchiDebugBuild UP-TO-DATE
+> Task :app:mergeDavidOrtunoChicchiDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileDavidOrtunoChicchiDebug
+> Task :app:checkDavidOrtunoChicchiDebugAarMetadata
+> Task :app:generateDavidOrtunoChicchiDebugResValues
+> Task :app:mapDavidOrtunoChicchiDebugSourceSetPaths
+> Task :app:generateDavidOrtunoChicchiDebugResources
+> Task :app:mergeDavidOrtunoChicchiDebugResources
+> Task :app:packageDavidOrtunoChicchiDebugResources
+> Task :app:createDavidOrtunoChicchiDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDavidOrtunoChicchiDebug
+> Task :app:parseDavidOrtunoChicchiDebugLocalResources
+> Task :app:processDavidOrtunoChicchiDebugMainManifest
+> Task :app:processDavidOrtunoChicchiDebugManifest
+> Task :app:processCelsoFuertesDebugResources
+> Task :app:mergeDavidOrtunoChicchiDebugShaders
+
+> Task :app:compileCelsoFuertesDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderCelsoFuertesDebug
+> Task :app:processDavidOrtunoChicchiDebugManifestForPackage
+> Task :app:mergeCelsoFuertesDebugGlobalSynthetics
+> Task :app:compileDavidOrtunoChicchiDebugShaders NO-SOURCE
+> Task :app:generateDavidOrtunoChicchiDebugAssets UP-TO-DATE
+> Task :app:mergeProjectDexCelsoFuertesDebug
+> Task :app:mergeDavidOrtunoChicchiDebugAssets
+> Task :app:compressDavidOrtunoChicchiDebugAssets
+> Task :app:desugarDavidOrtunoChicchiDebugFileDependencies
+> Task :app:processDavidOrtunoChicchiDebugJavaRes NO-SOURCE
+> Task :app:mergeDavidOrtunoChicchiDebugJavaResource
+> Task :app:packageCelsoFuertesDebug
+> Task :app:createCelsoFuertesDebugApkListingFileRedirect
+> Task :app:assembleCelsoFuertesDebug
+> Task :app:checkDavidOrtunoChicchiDebugDuplicateClasses
+> Task :app:mergeDavidOrtunoChicchiDebugJniLibFolders
+> Task :app:mergeExtDexDavidOrtunoChicchiDebug
+> Task :app:mergeDavidOrtunoChicchiDebugNativeLibs NO-SOURCE
+> Task :app:stripDavidOrtunoChicchiDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningDavidOrtunoChicchiDebug
+> Task :app:mergeLibDexDavidOrtunoChicchiDebug
+> Task :app:writeDavidOrtunoChicchiDebugAppMetadata
+> Task :app:writeDavidOrtunoChicchiDebugSigningConfigVersions
+> Task :app:preEdgarSuarezChumaceroDebugBuild UP-TO-DATE
+> Task :app:mergeEdgarSuarezChumaceroDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileEdgarSuarezChumaceroDebug
+> Task :app:checkEdgarSuarezChumaceroDebugAarMetadata
+> Task :app:generateEdgarSuarezChumaceroDebugResValues
+> Task :app:mapEdgarSuarezChumaceroDebugSourceSetPaths
+> Task :app:generateEdgarSuarezChumaceroDebugResources
+> Task :app:processDavidOrtunoChicchiDebugResources
+> Task :app:mergeEdgarSuarezChumaceroDebugResources
+
+> Task :app:compileDavidOrtunoChicchiDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderDavidOrtunoChicchiDebug
+> Task :app:mergeDavidOrtunoChicchiDebugGlobalSynthetics
+> Task :app:mergeProjectDexDavidOrtunoChicchiDebug
+> Task :app:packageEdgarSuarezChumaceroDebugResources
+> Task :app:createEdgarSuarezChumaceroDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksEdgarSuarezChumaceroDebug
+> Task :app:parseEdgarSuarezChumaceroDebugLocalResources
+> Task :app:processEdgarSuarezChumaceroDebugMainManifest
+> Task :app:processEdgarSuarezChumaceroDebugManifest
+> Task :app:mergeEdgarSuarezChumaceroDebugShaders
+> Task :app:packageDavidOrtunoChicchiDebug
+> Task :app:createDavidOrtunoChicchiDebugApkListingFileRedirect
+> Task :app:assembleDavidOrtunoChicchiDebug
+> Task :app:compileEdgarSuarezChumaceroDebugShaders NO-SOURCE
+> Task :app:generateEdgarSuarezChumaceroDebugAssets UP-TO-DATE
+> Task :app:mergeEdgarSuarezChumaceroDebugAssets
+> Task :app:compressEdgarSuarezChumaceroDebugAssets
+> Task :app:desugarEdgarSuarezChumaceroDebugFileDependencies
+> Task :app:processEdgarSuarezChumaceroDebugJavaRes NO-SOURCE
+> Task :app:mergeEdgarSuarezChumaceroDebugJavaResource
+> Task :app:checkEdgarSuarezChumaceroDebugDuplicateClasses
+> Task :app:mergeEdgarSuarezChumaceroDebugJniLibFolders
+> Task :app:mergeExtDexEdgarSuarezChumaceroDebug
+> Task :app:mergeEdgarSuarezChumaceroDebugNativeLibs NO-SOURCE
+> Task :app:stripEdgarSuarezChumaceroDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningEdgarSuarezChumaceroDebug
+> Task :app:writeEdgarSuarezChumaceroDebugAppMetadata
+> Task :app:mergeLibDexEdgarSuarezChumaceroDebug
+> Task :app:writeEdgarSuarezChumaceroDebugSigningConfigVersions
+> Task :app:preEdgarVillaroelDebugBuild UP-TO-DATE
+> Task :app:processEdgarSuarezChumaceroDebugManifestForPackage
+> Task :app:mergeEdgarVillaroelDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileEdgarVillaroelDebug
+> Task :app:checkEdgarVillaroelDebugAarMetadata
+> Task :app:generateEdgarVillaroelDebugResValues
+> Task :app:mapEdgarVillaroelDebugSourceSetPaths
+> Task :app:generateEdgarVillaroelDebugResources
+> Task :app:mergeEdgarVillaroelDebugResources
+> Task :app:packageEdgarVillaroelDebugResources
+> Task :app:createEdgarVillaroelDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksEdgarVillaroelDebug
+> Task :app:parseEdgarVillaroelDebugLocalResources
+> Task :app:processEdgarVillaroelDebugMainManifest
+> Task :app:processEdgarVillaroelDebugManifest
+> Task :app:mergeEdgarVillaroelDebugShaders
+> Task :app:processEdgarVillaroelDebugManifestForPackage
+> Task :app:compileEdgarVillaroelDebugShaders NO-SOURCE
+> Task :app:generateEdgarVillaroelDebugAssets UP-TO-DATE
+> Task :app:mergeEdgarVillaroelDebugAssets
+> Task :app:compressEdgarVillaroelDebugAssets
+> Task :app:desugarEdgarVillaroelDebugFileDependencies
+> Task :app:processEdgarVillaroelDebugJavaRes NO-SOURCE
+> Task :app:mergeEdgarVillaroelDebugJavaResource
+> Task :app:checkEdgarVillaroelDebugDuplicateClasses
+> Task :app:mergeExtDexEdgarVillaroelDebug
+> Task :app:mergeLibDexEdgarVillaroelDebug
+> Task :app:mergeEdgarVillaroelDebugJniLibFolders
+> Task :app:mergeEdgarVillaroelDebugNativeLibs NO-SOURCE
+> Task :app:stripEdgarVillaroelDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningEdgarVillaroelDebug
+> Task :app:writeEdgarVillaroelDebugAppMetadata
+> Task :app:writeEdgarVillaroelDebugSigningConfigVersions
+> Task :app:preFreddyGuzmanDebugBuild UP-TO-DATE
+> Task :app:mergeFreddyGuzmanDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileFreddyGuzmanDebug
+> Task :app:checkFreddyGuzmanDebugAarMetadata
+> Task :app:processEdgarSuarezChumaceroDebugResources
+> Task :app:generateFreddyGuzmanDebugResValues
+> Task :app:processEdgarVillaroelDebugResources
+
+> Task :app:compileEdgarSuarezChumaceroDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderEdgarSuarezChumaceroDebug
+> Task :app:mergeEdgarSuarezChumaceroDebugGlobalSynthetics
+> Task :app:mergeProjectDexEdgarSuarezChumaceroDebug
+
+> Task :app:compileEdgarVillaroelDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderEdgarVillaroelDebug
+> Task :app:packageEdgarSuarezChumaceroDebug
+> Task :app:createEdgarSuarezChumaceroDebugApkListingFileRedirect
+> Task :app:assembleEdgarSuarezChumaceroDebug
+> Task :app:mergeEdgarVillaroelDebugGlobalSynthetics
+> Task :app:mapFreddyGuzmanDebugSourceSetPaths
+> Task :app:generateFreddyGuzmanDebugResources
+> Task :app:mergeProjectDexEdgarVillaroelDebug
+> Task :app:mergeFreddyGuzmanDebugResources
+> Task :app:packageFreddyGuzmanDebugResources
+> Task :app:parseFreddyGuzmanDebugLocalResources
+> Task :app:createFreddyGuzmanDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksFreddyGuzmanDebug
+> Task :app:processFreddyGuzmanDebugMainManifest
+> Task :app:processFreddyGuzmanDebugManifest
+> Task :app:packageEdgarVillaroelDebug
+> Task :app:createEdgarVillaroelDebugApkListingFileRedirect
+> Task :app:assembleEdgarVillaroelDebug
+> Task :app:mergeFreddyGuzmanDebugShaders
+> Task :app:compileFreddyGuzmanDebugShaders NO-SOURCE
+> Task :app:generateFreddyGuzmanDebugAssets UP-TO-DATE
+> Task :app:mergeFreddyGuzmanDebugAssets
+> Task :app:compressFreddyGuzmanDebugAssets
+> Task :app:checkFreddyGuzmanDebugDuplicateClasses
+> Task :app:desugarFreddyGuzmanDebugFileDependencies
+> Task :app:processFreddyGuzmanDebugJavaRes NO-SOURCE
+> Task :app:mergeExtDexFreddyGuzmanDebug
+> Task :app:processFreddyGuzmanDebugManifestForPackage
+> Task :app:mergeFreddyGuzmanDebugJavaResource
+> Task :app:mergeFreddyGuzmanDebugJniLibFolders
+> Task :app:mergeFreddyGuzmanDebugNativeLibs NO-SOURCE
+> Task :app:mergeLibDexFreddyGuzmanDebug
+> Task :app:stripFreddyGuzmanDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningFreddyGuzmanDebug
+> Task :app:writeFreddyGuzmanDebugAppMetadata
+> Task :app:writeFreddyGuzmanDebugSigningConfigVersions
+> Task :app:preFreddyRomayDebugBuild UP-TO-DATE
+> Task :app:mergeFreddyRomayDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileFreddyRomayDebug
+> Task :app:checkFreddyRomayDebugAarMetadata
+> Task :app:generateFreddyRomayDebugResValues
+> Task :app:mapFreddyRomayDebugSourceSetPaths
+> Task :app:generateFreddyRomayDebugResources
+> Task :app:mergeFreddyRomayDebugResources
+> Task :app:packageFreddyRomayDebugResources
+> Task :app:createFreddyRomayDebugCompatibleScreenManifests
+> Task :app:parseFreddyRomayDebugLocalResources
+> Task :app:extractDeepLinksFreddyRomayDebug
+> Task :app:processFreddyRomayDebugMainManifest
+> Task :app:processFreddyRomayDebugManifest
+> Task :app:processFreddyRomayDebugManifestForPackage
+> Task :app:mergeFreddyRomayDebugShaders
+> Task :app:compileFreddyRomayDebugShaders NO-SOURCE
+> Task :app:generateFreddyRomayDebugAssets UP-TO-DATE
+> Task :app:mergeFreddyRomayDebugAssets
+> Task :app:compressFreddyRomayDebugAssets
+> Task :app:checkFreddyRomayDebugDuplicateClasses
+> Task :app:desugarFreddyRomayDebugFileDependencies
+> Task :app:mergeExtDexFreddyRomayDebug
+> Task :app:processFreddyGuzmanDebugResources
+> Task :app:processFreddyRomayDebugJavaRes NO-SOURCE
+> Task :app:processFreddyRomayDebugResources
+
+> Task :app:compileFreddyGuzmanDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderFreddyGuzmanDebug
+> Task :app:mergeFreddyGuzmanDebugGlobalSynthetics
+> Task :app:mergeProjectDexFreddyGuzmanDebug
+
+> Task :app:compileFreddyRomayDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderFreddyRomayDebug
+> Task :app:mergeFreddyRomayDebugGlobalSynthetics
+> Task :app:mergeFreddyRomayDebugJavaResource
+> Task :app:mergeLibDexFreddyRomayDebug
+> Task :app:mergeFreddyRomayDebugJniLibFolders
+> Task :app:mergeFreddyRomayDebugNativeLibs NO-SOURCE
+> Task :app:stripFreddyRomayDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningFreddyRomayDebug
+> Task :app:mergeProjectDexFreddyRomayDebug
+> Task :app:writeFreddyRomayDebugAppMetadata
+> Task :app:writeFreddyRomayDebugSigningConfigVersions
+> Task :app:preGaryAlvarezDebugBuild UP-TO-DATE
+> Task :app:mergeGaryAlvarezDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileGaryAlvarezDebug
+> Task :app:packageFreddyGuzmanDebug
+> Task :app:createFreddyGuzmanDebugApkListingFileRedirect
+> Task :app:assembleFreddyGuzmanDebug
+> Task :app:checkGaryAlvarezDebugAarMetadata
+> Task :app:generateGaryAlvarezDebugResValues
+> Task :app:mapGaryAlvarezDebugSourceSetPaths
+> Task :app:generateGaryAlvarezDebugResources
+> Task :app:mergeGaryAlvarezDebugResources
+> Task :app:packageGaryAlvarezDebugResources
+> Task :app:createGaryAlvarezDebugCompatibleScreenManifests
+> Task :app:parseGaryAlvarezDebugLocalResources
+> Task :app:packageFreddyRomayDebug
+> Task :app:createFreddyRomayDebugApkListingFileRedirect
+> Task :app:assembleFreddyRomayDebug
+> Task :app:extractDeepLinksGaryAlvarezDebug
+> Task :app:processGaryAlvarezDebugMainManifest
+> Task :app:processGaryAlvarezDebugManifest
+> Task :app:processGaryAlvarezDebugManifestForPackage
+> Task :app:mergeGaryAlvarezDebugShaders
+> Task :app:compileGaryAlvarezDebugShaders NO-SOURCE
+> Task :app:generateGaryAlvarezDebugAssets UP-TO-DATE
+> Task :app:mergeGaryAlvarezDebugAssets
+> Task :app:compressGaryAlvarezDebugAssets
+> Task :app:checkGaryAlvarezDebugDuplicateClasses
+> Task :app:desugarGaryAlvarezDebugFileDependencies
+> Task :app:processGaryAlvarezDebugJavaRes NO-SOURCE
+> Task :app:mergeExtDexGaryAlvarezDebug
+> Task :app:mergeGaryAlvarezDebugJavaResource
+> Task :app:mergeGaryAlvarezDebugJniLibFolders
+> Task :app:mergeLibDexGaryAlvarezDebug
+> Task :app:mergeGaryAlvarezDebugNativeLibs NO-SOURCE
+> Task :app:stripGaryAlvarezDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningGaryAlvarezDebug
+> Task :app:writeGaryAlvarezDebugAppMetadata
+> Task :app:writeGaryAlvarezDebugSigningConfigVersions
+> Task :app:preGermanHinojosaDebugBuild UP-TO-DATE
+> Task :app:mergeGermanHinojosaDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileGermanHinojosaDebug
+> Task :app:checkGermanHinojosaDebugAarMetadata
+> Task :app:generateGermanHinojosaDebugResValues
+> Task :app:mapGermanHinojosaDebugSourceSetPaths
+> Task :app:generateGermanHinojosaDebugResources
+> Task :app:mergeGermanHinojosaDebugResources
+> Task :app:packageGermanHinojosaDebugResources
+> Task :app:createGermanHinojosaDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksGermanHinojosaDebug
+> Task :app:parseGermanHinojosaDebugLocalResources
+> Task :app:processGaryAlvarezDebugResources
+> Task :app:processGermanHinojosaDebugMainManifest
+
+> Task :app:compileGaryAlvarezDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderGaryAlvarezDebug
+> Task :app:mergeGaryAlvarezDebugGlobalSynthetics
+> Task :app:processGermanHinojosaDebugManifest
+> Task :app:processGermanHinojosaDebugManifestForPackage
+> Task :app:mergeGermanHinojosaDebugShaders
+> Task :app:compileGermanHinojosaDebugShaders NO-SOURCE
+> Task :app:generateGermanHinojosaDebugAssets UP-TO-DATE
+> Task :app:mergeProjectDexGaryAlvarezDebug
+> Task :app:mergeGermanHinojosaDebugAssets
+> Task :app:compressGermanHinojosaDebugAssets
+> Task :app:checkGermanHinojosaDebugDuplicateClasses
+> Task :app:desugarGermanHinojosaDebugFileDependencies
+> Task :app:processGermanHinojosaDebugJavaRes NO-SOURCE
+> Task :app:mergeExtDexGermanHinojosaDebug
+> Task :app:mergeGermanHinojosaDebugJavaResource
+> Task :app:mergeLibDexGermanHinojosaDebug
+> Task :app:mergeGermanHinojosaDebugJniLibFolders
+> Task :app:mergeGermanHinojosaDebugNativeLibs NO-SOURCE
+> Task :app:stripGermanHinojosaDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningGermanHinojosaDebug
+> Task :app:writeGermanHinojosaDebugAppMetadata
+> Task :app:writeGermanHinojosaDebugSigningConfigVersions
+> Task :app:preGueryAguirreMontesDebugBuild UP-TO-DATE
+> Task :app:mergeGueryAguirreMontesDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileGueryAguirreMontesDebug
+> Task :app:checkGueryAguirreMontesDebugAarMetadata
+> Task :app:generateGueryAguirreMontesDebugResValues
+> Task :app:mapGueryAguirreMontesDebugSourceSetPaths
+> Task :app:generateGueryAguirreMontesDebugResources
+> Task :app:packageGaryAlvarezDebug
+> Task :app:createGaryAlvarezDebugApkListingFileRedirect
+> Task :app:assembleGaryAlvarezDebug
+> Task :app:mergeGueryAguirreMontesDebugResources
+> Task :app:packageGueryAguirreMontesDebugResources
+> Task :app:createGueryAguirreMontesDebugCompatibleScreenManifests
+> Task :app:parseGueryAguirreMontesDebugLocalResources
+> Task :app:extractDeepLinksGueryAguirreMontesDebug
+> Task :app:processGueryAguirreMontesDebugMainManifest
+> Task :app:processGueryAguirreMontesDebugManifest
+> Task :app:mergeGueryAguirreMontesDebugShaders
+> Task :app:processGueryAguirreMontesDebugManifestForPackage
+> Task :app:compileGueryAguirreMontesDebugShaders NO-SOURCE
+> Task :app:generateGueryAguirreMontesDebugAssets UP-TO-DATE
+> Task :app:mergeGueryAguirreMontesDebugAssets
+> Task :app:compressGueryAguirreMontesDebugAssets
+> Task :app:checkGueryAguirreMontesDebugDuplicateClasses
+> Task :app:desugarGueryAguirreMontesDebugFileDependencies
+> Task :app:processGermanHinojosaDebugResources
+> Task :app:mergeExtDexGueryAguirreMontesDebug
+> Task :app:processGueryAguirreMontesDebugJavaRes NO-SOURCE
+> Task :app:processGueryAguirreMontesDebugResources
+
+> Task :app:compileGermanHinojosaDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderGermanHinojosaDebug
+> Task :app:mergeGermanHinojosaDebugGlobalSynthetics
+> Task :app:mergeProjectDexGermanHinojosaDebug
+
+> Task :app:compileGueryAguirreMontesDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderGueryAguirreMontesDebug
+> Task :app:mergeGueryAguirreMontesDebugGlobalSynthetics
+> Task :app:packageGermanHinojosaDebug
+> Task :app:mergeGueryAguirreMontesDebugJavaResource
+> Task :app:createGermanHinojosaDebugApkListingFileRedirect
+> Task :app:assembleGermanHinojosaDebug
+> Task :app:mergeLibDexGueryAguirreMontesDebug
+> Task :app:mergeGueryAguirreMontesDebugJniLibFolders
+> Task :app:mergeGueryAguirreMontesDebugNativeLibs NO-SOURCE
+> Task :app:stripGueryAguirreMontesDebugDebugSymbols NO-SOURCE
+> Task :app:mergeProjectDexGueryAguirreMontesDebug
+> Task :app:validateSigningGueryAguirreMontesDebug
+> Task :app:writeGueryAguirreMontesDebugAppMetadata
+> Task :app:writeGueryAguirreMontesDebugSigningConfigVersions
+> Task :app:preHerbertFloresDebugBuild UP-TO-DATE
+> Task :app:mergeHerbertFloresDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileHerbertFloresDebug
+> Task :app:generateHerbertFloresDebugResValues
+> Task :app:checkHerbertFloresDebugAarMetadata
+> Task :app:mapHerbertFloresDebugSourceSetPaths
+> Task :app:generateHerbertFloresDebugResources
+> Task :app:mergeHerbertFloresDebugResources
+> Task :app:packageHerbertFloresDebugResources
+> Task :app:packageGueryAguirreMontesDebug
+> Task :app:createGueryAguirreMontesDebugApkListingFileRedirect
+> Task :app:assembleGueryAguirreMontesDebug
+> Task :app:createHerbertFloresDebugCompatibleScreenManifests
+> Task :app:parseHerbertFloresDebugLocalResources
+> Task :app:extractDeepLinksHerbertFloresDebug
+> Task :app:processHerbertFloresDebugMainManifest
+> Task :app:processHerbertFloresDebugManifest
+> Task :app:mergeHerbertFloresDebugShaders
+> Task :app:compileHerbertFloresDebugShaders NO-SOURCE
+> Task :app:generateHerbertFloresDebugAssets UP-TO-DATE
+> Task :app:mergeHerbertFloresDebugAssets
+> Task :app:compressHerbertFloresDebugAssets
+> Task :app:checkHerbertFloresDebugDuplicateClasses
+> Task :app:processHerbertFloresDebugManifestForPackage
+> Task :app:desugarHerbertFloresDebugFileDependencies
+> Task :app:processHerbertFloresDebugJavaRes NO-SOURCE
+> Task :app:mergeExtDexHerbertFloresDebug
+> Task :app:mergeHerbertFloresDebugJavaResource
+> Task :app:mergeLibDexHerbertFloresDebug
+> Task :app:mergeHerbertFloresDebugJniLibFolders
+> Task :app:mergeHerbertFloresDebugNativeLibs NO-SOURCE
+> Task :app:stripHerbertFloresDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningHerbertFloresDebug
+> Task :app:writeHerbertFloresDebugAppMetadata
+> Task :app:writeHerbertFloresDebugSigningConfigVersions
+> Task :app:preJoseLuisRomanDebugBuild UP-TO-DATE
+> Task :app:mergeJoseLuisRomanDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileJoseLuisRomanDebug
+> Task :app:checkJoseLuisRomanDebugAarMetadata
+> Task :app:generateJoseLuisRomanDebugResValues
+> Task :app:mapJoseLuisRomanDebugSourceSetPaths
+> Task :app:generateJoseLuisRomanDebugResources
+> Task :app:mergeJoseLuisRomanDebugResources
+> Task :app:packageJoseLuisRomanDebugResources
+> Task :app:createJoseLuisRomanDebugCompatibleScreenManifests
+> Task :app:parseJoseLuisRomanDebugLocalResources
+> Task :app:extractDeepLinksJoseLuisRomanDebug
+> Task :app:processJoseLuisRomanDebugMainManifest
+> Task :app:processJoseLuisRomanDebugManifest
+> Task :app:processJoseLuisRomanDebugManifestForPackage
+> Task :app:processHerbertFloresDebugResources
+> Task :app:mergeJoseLuisRomanDebugShaders
+
+> Task :app:compileHerbertFloresDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:processJoseLuisRomanDebugResources
+> Task :app:dexBuilderHerbertFloresDebug
+> Task :app:mergeHerbertFloresDebugGlobalSynthetics
+> Task :app:mergeProjectDexHerbertFloresDebug
+
+> Task :app:compileJoseLuisRomanDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:compileJoseLuisRomanDebugShaders NO-SOURCE
+> Task :app:generateJoseLuisRomanDebugAssets UP-TO-DATE
+> Task :app:mergeJoseLuisRomanDebugAssets
+> Task :app:compressJoseLuisRomanDebugAssets
+> Task :app:checkJoseLuisRomanDebugDuplicateClasses
+> Task :app:desugarJoseLuisRomanDebugFileDependencies
+> Task :app:mergeExtDexJoseLuisRomanDebug
+> Task :app:dexBuilderJoseLuisRomanDebug
+> Task :app:mergeJoseLuisRomanDebugGlobalSynthetics
+> Task :app:packageHerbertFloresDebug
+> Task :app:createHerbertFloresDebugApkListingFileRedirect
+> Task :app:assembleHerbertFloresDebug
+> Task :app:processJoseLuisRomanDebugJavaRes NO-SOURCE
+> Task :app:mergeJoseLuisRomanDebugJavaResource
+> Task :app:mergeLibDexJoseLuisRomanDebug
+> Task :app:mergeJoseLuisRomanDebugJniLibFolders
+> Task :app:mergeJoseLuisRomanDebugNativeLibs NO-SOURCE
+> Task :app:stripJoseLuisRomanDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningJoseLuisRomanDebug
+> Task :app:writeJoseLuisRomanDebugAppMetadata
+> Task :app:mergeProjectDexJoseLuisRomanDebug
+> Task :app:writeJoseLuisRomanDebugSigningConfigVersions
+> Task :app:preJuanCarlosLopezFloresDebugBuild UP-TO-DATE
+> Task :app:mergeJuanCarlosLopezFloresDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileJuanCarlosLopezFloresDebug
+> Task :app:checkJuanCarlosLopezFloresDebugAarMetadata
+> Task :app:generateJuanCarlosLopezFloresDebugResValues
+> Task :app:mapJuanCarlosLopezFloresDebugSourceSetPaths
+> Task :app:generateJuanCarlosLopezFloresDebugResources
+> Task :app:mergeJuanCarlosLopezFloresDebugResources
+> Task :app:packageJuanCarlosLopezFloresDebugResources
+> Task :app:createJuanCarlosLopezFloresDebugCompatibleScreenManifests
+> Task :app:parseJuanCarlosLopezFloresDebugLocalResources
+> Task :app:extractDeepLinksJuanCarlosLopezFloresDebug
+> Task :app:processJuanCarlosLopezFloresDebugMainManifest
+> Task :app:processJuanCarlosLopezFloresDebugManifest
+> Task :app:mergeJuanCarlosLopezFloresDebugShaders
+> Task :app:compileJuanCarlosLopezFloresDebugShaders NO-SOURCE
+> Task :app:generateJuanCarlosLopezFloresDebugAssets UP-TO-DATE
+> Task :app:mergeJuanCarlosLopezFloresDebugAssets
+> Task :app:compressJuanCarlosLopezFloresDebugAssets
+> Task :app:checkJuanCarlosLopezFloresDebugDuplicateClasses
+> Task :app:processJuanCarlosLopezFloresDebugManifestForPackage
+> Task :app:desugarJuanCarlosLopezFloresDebugFileDependencies
+> Task :app:mergeExtDexJuanCarlosLopezFloresDebug
+> Task :app:packageJoseLuisRomanDebug
+> Task :app:createJoseLuisRomanDebugApkListingFileRedirect
+> Task :app:assembleJoseLuisRomanDebug
+> Task :app:processJuanCarlosLopezFloresDebugJavaRes NO-SOURCE
+> Task :app:mergeJuanCarlosLopezFloresDebugJavaResource
+> Task :app:mergeLibDexJuanCarlosLopezFloresDebug
+> Task :app:mergeJuanCarlosLopezFloresDebugJniLibFolders
+> Task :app:mergeJuanCarlosLopezFloresDebugNativeLibs NO-SOURCE
+> Task :app:stripJuanCarlosLopezFloresDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningJuanCarlosLopezFloresDebug
+> Task :app:writeJuanCarlosLopezFloresDebugAppMetadata
+> Task :app:writeJuanCarlosLopezFloresDebugSigningConfigVersions
+> Task :app:preJuanEduardoChaconDuranDebugBuild UP-TO-DATE
+> Task :app:mergeJuanEduardoChaconDuranDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileJuanEduardoChaconDuranDebug
+> Task :app:checkJuanEduardoChaconDuranDebugAarMetadata
+> Task :app:generateJuanEduardoChaconDuranDebugResValues
+> Task :app:mapJuanEduardoChaconDuranDebugSourceSetPaths
+> Task :app:generateJuanEduardoChaconDuranDebugResources
+> Task :app:mergeJuanEduardoChaconDuranDebugResources
+> Task :app:packageJuanEduardoChaconDuranDebugResources
+> Task :app:parseJuanEduardoChaconDuranDebugLocalResources
+> Task :app:createJuanEduardoChaconDuranDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksJuanEduardoChaconDuranDebug
+> Task :app:processJuanEduardoChaconDuranDebugMainManifest
+> Task :app:processJuanEduardoChaconDuranDebugManifest
+> Task :app:mergeJuanEduardoChaconDuranDebugShaders
+> Task :app:compileJuanEduardoChaconDuranDebugShaders NO-SOURCE
+> Task :app:processJuanEduardoChaconDuranDebugManifestForPackage
+> Task :app:processJuanCarlosLopezFloresDebugResources
+> Task :app:processJuanEduardoChaconDuranDebugResources
+
+> Task :app:compileJuanCarlosLopezFloresDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderJuanCarlosLopezFloresDebug
+> Task :app:mergeJuanCarlosLopezFloresDebugGlobalSynthetics
+> Task :app:mergeProjectDexJuanCarlosLopezFloresDebug
+
+> Task :app:compileJuanEduardoChaconDuranDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:generateJuanEduardoChaconDuranDebugAssets UP-TO-DATE
+> Task :app:mergeJuanEduardoChaconDuranDebugAssets
+> Task :app:compressJuanEduardoChaconDuranDebugAssets
+> Task :app:checkJuanEduardoChaconDuranDebugDuplicateClasses
+> Task :app:desugarJuanEduardoChaconDuranDebugFileDependencies
+> Task :app:mergeExtDexJuanEduardoChaconDuranDebug
+> Task :app:dexBuilderJuanEduardoChaconDuranDebug
+> Task :app:processJuanEduardoChaconDuranDebugJavaRes NO-SOURCE
+> Task :app:mergeJuanEduardoChaconDuranDebugGlobalSynthetics
+> Task :app:mergeJuanEduardoChaconDuranDebugJavaResource
+> Task :app:packageJuanCarlosLopezFloresDebug
+> Task :app:createJuanCarlosLopezFloresDebugApkListingFileRedirect
+> Task :app:assembleJuanCarlosLopezFloresDebug
+> Task :app:mergeLibDexJuanEduardoChaconDuranDebug
+> Task :app:mergeJuanEduardoChaconDuranDebugJniLibFolders
+> Task :app:mergeJuanEduardoChaconDuranDebugNativeLibs NO-SOURCE
+> Task :app:stripJuanEduardoChaconDuranDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningJuanEduardoChaconDuranDebug
+> Task :app:writeJuanEduardoChaconDuranDebugAppMetadata
+> Task :app:writeJuanEduardoChaconDuranDebugSigningConfigVersions
+> Task :app:preJustoRufinoGalanDebugBuild UP-TO-DATE
+> Task :app:mergeJustoRufinoGalanDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileJustoRufinoGalanDebug
+> Task :app:generateJustoRufinoGalanDebugResValues
+> Task :app:checkJustoRufinoGalanDebugAarMetadata
+> Task :app:mergeProjectDexJuanEduardoChaconDuranDebug
+> Task :app:mapJustoRufinoGalanDebugSourceSetPaths
+> Task :app:generateJustoRufinoGalanDebugResources
+> Task :app:mergeJustoRufinoGalanDebugResources
+> Task :app:packageJustoRufinoGalanDebugResources
+> Task :app:packageJuanEduardoChaconDuranDebug
+> Task :app:createJuanEduardoChaconDuranDebugApkListingFileRedirect
+> Task :app:assembleJuanEduardoChaconDuranDebug
+> Task :app:parseJustoRufinoGalanDebugLocalResources
+> Task :app:createJustoRufinoGalanDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksJustoRufinoGalanDebug
+> Task :app:processJustoRufinoGalanDebugMainManifest
+> Task :app:processJustoRufinoGalanDebugManifest
+> Task :app:mergeJustoRufinoGalanDebugShaders
+> Task :app:processJustoRufinoGalanDebugManifestForPackage
+> Task :app:compileJustoRufinoGalanDebugShaders NO-SOURCE
+> Task :app:generateJustoRufinoGalanDebugAssets UP-TO-DATE
+> Task :app:mergeJustoRufinoGalanDebugAssets
+> Task :app:compressJustoRufinoGalanDebugAssets
+> Task :app:checkJustoRufinoGalanDebugDuplicateClasses
+> Task :app:desugarJustoRufinoGalanDebugFileDependencies
+> Task :app:mergeExtDexJustoRufinoGalanDebug
+> Task :app:processJustoRufinoGalanDebugJavaRes NO-SOURCE
+> Task :app:mergeJustoRufinoGalanDebugJavaResource
+> Task :app:mergeLibDexJustoRufinoGalanDebug
+> Task :app:mergeJustoRufinoGalanDebugJniLibFolders
+> Task :app:mergeJustoRufinoGalanDebugNativeLibs NO-SOURCE
+> Task :app:stripJustoRufinoGalanDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningJustoRufinoGalanDebug
+> Task :app:writeJustoRufinoGalanDebugAppMetadata
+> Task :app:writeJustoRufinoGalanDebugSigningConfigVersions
+> Task :app:preRuthMamaniDebugBuild UP-TO-DATE
+> Task :app:mergeRuthMamaniDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileRuthMamaniDebug
+> Task :app:checkRuthMamaniDebugAarMetadata
+> Task :app:generateRuthMamaniDebugResValues
+> Task :app:mapRuthMamaniDebugSourceSetPaths
+> Task :app:generateRuthMamaniDebugResources
+> Task :app:mergeRuthMamaniDebugResources
+> Task :app:packageRuthMamaniDebugResources
+> Task :app:createRuthMamaniDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksRuthMamaniDebug
+> Task :app:parseRuthMamaniDebugLocalResources
+> Task :app:processRuthMamaniDebugMainManifest
+> Task :app:processRuthMamaniDebugManifest
+> Task :app:mergeRuthMamaniDebugShaders
+> Task :app:compileRuthMamaniDebugShaders NO-SOURCE
+> Task :app:generateRuthMamaniDebugAssets UP-TO-DATE
+> Task :app:mergeRuthMamaniDebugAssets
+> Task :app:compressRuthMamaniDebugAssets
+> Task :app:processRuthMamaniDebugManifestForPackage
+> Task :app:processJustoRufinoGalanDebugResources
+
+> Task :app:compileJustoRufinoGalanDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:processRuthMamaniDebugResources
+> Task :app:dexBuilderJustoRufinoGalanDebug
+> Task :app:mergeJustoRufinoGalanDebugGlobalSynthetics
+> Task :app:mergeProjectDexJustoRufinoGalanDebug
+
+> Task :app:compileRuthMamaniDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:checkRuthMamaniDebugDuplicateClasses
+> Task :app:desugarRuthMamaniDebugFileDependencies
+> Task :app:mergeExtDexRuthMamaniDebug
+> Task :app:mergeLibDexRuthMamaniDebug
+> Task :app:dexBuilderRuthMamaniDebug
+> Task :app:packageJustoRufinoGalanDebug
+> Task :app:createJustoRufinoGalanDebugApkListingFileRedirect
+> Task :app:assembleJustoRufinoGalanDebug
+> Task :app:processRuthMamaniDebugJavaRes NO-SOURCE
+> Task :app:mergeRuthMamaniDebugGlobalSynthetics
+> Task :app:mergeRuthMamaniDebugJavaResource
+> Task :app:mergeRuthMamaniDebugJniLibFolders
+> Task :app:mergeRuthMamaniDebugNativeLibs NO-SOURCE
+> Task :app:stripRuthMamaniDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningRuthMamaniDebug
+> Task :app:mergeProjectDexRuthMamaniDebug
+> Task :app:writeRuthMamaniDebugAppMetadata
+> Task :app:writeRuthMamaniDebugSigningConfigVersions
+> Task :app:preTeofiloLlanosChipanaDebugBuild UP-TO-DATE
+> Task :app:mergeTeofiloLlanosChipanaDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileTeofiloLlanosChipanaDebug
+> Task :app:checkTeofiloLlanosChipanaDebugAarMetadata
+> Task :app:generateTeofiloLlanosChipanaDebugResValues
+> Task :app:mapTeofiloLlanosChipanaDebugSourceSetPaths
+> Task :app:generateTeofiloLlanosChipanaDebugResources
+> Task :app:packageRuthMamaniDebug
+> Task :app:mergeTeofiloLlanosChipanaDebugResources
+> Task :app:createRuthMamaniDebugApkListingFileRedirect
+> Task :app:assembleRuthMamaniDebug
+> Task :app:packageTeofiloLlanosChipanaDebugResources
+> Task :app:createTeofiloLlanosChipanaDebugCompatibleScreenManifests
+> Task :app:parseTeofiloLlanosChipanaDebugLocalResources
+> Task :app:extractDeepLinksTeofiloLlanosChipanaDebug
+> Task :app:processTeofiloLlanosChipanaDebugMainManifest
+> Task :app:processTeofiloLlanosChipanaDebugManifest
+> Task :app:mergeTeofiloLlanosChipanaDebugShaders
+> Task :app:processTeofiloLlanosChipanaDebugManifestForPackage
+> Task :app:compileTeofiloLlanosChipanaDebugShaders NO-SOURCE
+> Task :app:generateTeofiloLlanosChipanaDebugAssets UP-TO-DATE
+> Task :app:mergeTeofiloLlanosChipanaDebugAssets
+> Task :app:checkTeofiloLlanosChipanaDebugDuplicateClasses
+> Task :app:compressTeofiloLlanosChipanaDebugAssets
+> Task :app:desugarTeofiloLlanosChipanaDebugFileDependencies
+> Task :app:processTeofiloLlanosChipanaDebugJavaRes NO-SOURCE
+> Task :app:mergeExtDexTeofiloLlanosChipanaDebug
+> Task :app:mergeTeofiloLlanosChipanaDebugJavaResource
+> Task :app:mergeTeofiloLlanosChipanaDebugJniLibFolders
+> Task :app:mergeLibDexTeofiloLlanosChipanaDebug
+> Task :app:mergeTeofiloLlanosChipanaDebugNativeLibs NO-SOURCE
+> Task :app:stripTeofiloLlanosChipanaDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningTeofiloLlanosChipanaDebug
+> Task :app:writeTeofiloLlanosChipanaDebugAppMetadata
+> Task :app:writeTeofiloLlanosChipanaDebugSigningConfigVersions
+> Task :app:processTeofiloLlanosChipanaDebugResources
+
+> Task :app:compileTeofiloLlanosChipanaDebugJavaWithJavac
+Note: /home/runner/work/horarios-cyf-2026/horarios-cyf-2026/app/src/main/java/bo/edu/uatf/cyf/horario/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:dexBuilderTeofiloLlanosChipanaDebug
+> Task :app:mergeTeofiloLlanosChipanaDebugGlobalSynthetics
+> Task :app:mergeProjectDexTeofiloLlanosChipanaDebug
+> Task :app:packageTeofiloLlanosChipanaDebug
+> Task :app:createTeofiloLlanosChipanaDebugApkListingFileRedirect
+> Task :app:assembleTeofiloLlanosChipanaDebug
+> Task :app:assembleDebug
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/compile-1787243227474.json
+
+BUILD SUCCESSFUL in 54s
+608 actionable tasks: 608 executed
+
+===== SDK LOG =====
+Loading package information...                                                  Loading local repository...                                                     [                                       ] 3% Loading local repository...        [                                       ] 3% Fetch remote repository...         [=                                      ] 3% Fetch remote repository...         [=                                      ] 4% Fetch remote repository...         [=                                      ] 5% Fetch remote repository...         [==                                     ] 5% Fetch remote repository...         [==                                     ] 6% Fetch remote repository...         [==                                     ] 7% Fetch remote repository...         [==                                     ] 7% Computing updates...               [===                                    ] 8% Computing updates...               [===                                    ] 10% Computing updates...              [=======================================] 100% Computing updates...             
+
+total 380K
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-albertoMoralesColque-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-alexMedinaceli-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-anaMariaOros-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-celsoFuertes-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-davidOrtunoChicchi-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-edgarSuarezChumacero-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-edgarVillaroel-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-freddyGuzman-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-freddyRomay-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-garyAlvarez-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-germanHinojosa-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-gueryAguirreMontes-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-herbertFlores-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-joseLuisRoman-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-juanCarlosLopezFlores-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-juanEduardoChaconDuran-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-justoRufinoGalan-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-ruthMamani-debug.apk
+-rw-r--r-- 1 runner runner 20K Aug 20 16:27 app-teofiloLlanosChipana-debug.apk
