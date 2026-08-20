@@ -1,0 +1,41 @@
+name: Compilar 19 APK docentes
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ build-android-apk ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Instalar SDK Android
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Extraer proyecto
+        run: |
+          mkdir proyecto
+          unzip -q proyecto_android_fuente.zip -d proyecto
+      - name: Compilar APK
+        working-directory: proyecto
+        run: gradle :app:assembleDebug --stacktrace
+      - name: Reunir instaladores
+        run: |
+          mkdir -p dist
+          find proyecto/app/build/outputs/apk -type f -name '*-debug.apk' -exec cp {} dist/ \;
+          echo "APK generados:"
+          ls -lh dist
+          test "$(find dist -type f -name '*.apk' | wc -l)" -eq 19
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Instaladores-Android-Docentes-CyF-02-2026
+          path: dist/*.apk
+          retention-days: 30
