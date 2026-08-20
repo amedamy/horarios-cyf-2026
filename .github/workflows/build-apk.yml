@@ -1,0 +1,55 @@
+name: Compilar 19 APK docentes
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ build-android-apk ]
+    paths-ignore:
+      - 'instaladores/**'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Instalar SDK Android
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Extraer proyecto
+        run: |
+          rm -rf proyecto
+          mkdir proyecto
+          unzip -q proyecto_android_fuente.zip -d proyecto
+      - name: Compilar APK
+        working-directory: proyecto
+        run: gradle :app:assembleDebug --stacktrace
+      - name: Reunir y validar 19 instaladores
+        run: |
+          rm -rf instaladores
+          mkdir -p instaladores
+          find proyecto/app/build/outputs/apk -type f -name '*-debug.apk' -exec cp {} instaladores/ \;
+          echo "APK generados:"
+          ls -lh instaladores
+          test "$(find instaladores -type f -name '*.apk' | wc -l)" -eq 19
+      - name: Publicar APK en la rama de compilación
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- instaladores/*.apk
+          git commit -m "Publicar 19 APK docentes" || exit 0
+          git push origin HEAD:build-android-apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Instaladores-Android-Docentes-CyF-02-2026
+          path: instaladores/*.apk
+          retention-days: 30
