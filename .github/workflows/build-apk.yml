@@ -6,6 +6,8 @@ on:
     branches: [ build-android-apk ]
     paths-ignore:
       - 'instaladores/**'
+      - 'build_status.txt'
+      - 'build.log'
 
 permissions:
   contents: write
@@ -21,29 +23,59 @@ jobs:
           java-version: '17'
       - uses: android-actions/setup-android@v3
       - name: Instalar SDK Android
-        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+        id: sdk
+        continue-on-error: true
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0" > sdk.log 2>&1
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
-      - name: Compilar 19 APK
-        run: gradle :app:assembleDebug --stacktrace
-      - name: Reunir y validar 19 instaladores
+      - name: Compilar APK y guardar diagnóstico
+        id: compile
+        shell: bash
+        run: |
+          set +e
+          gradle :app:assembleDebug --stacktrace > build.log 2>&1
+          CODE=$?
+          echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
+          if [ "$CODE" -eq 0 ]; then
+            echo "SUCCESS" > build_status.txt
+          else
+            echo "FAILED exit_code=$CODE" > build_status.txt
+          fi
+          if [ -f sdk.log ]; then
+            echo "" >> build.log
+            echo "===== SDK LOG =====" >> build.log
+            cat sdk.log >> build.log
+          fi
+          exit 0
+      - name: Reunir instaladores si existen
+        shell: bash
         run: |
           rm -rf instaladores
           mkdir -p instaladores
-          find app/build/outputs/apk -type f -name '*-debug.apk' -exec cp {} instaladores/ \;
-          echo "APK generados:"
-          ls -lh instaladores
-          test "$(find instaladores -type f -name '*.apk' | wc -l)" -eq 19
-      - name: Publicar APK en la rama de compilación
+          find app/build/outputs/apk -type f -name '*-debug.apk' -exec cp {} instaladores/ \; 2>/dev/null || true
+          COUNT=$(find instaladores -type f -name '*.apk' | wc -l)
+          echo "apk_count=$COUNT" >> build_status.txt
+          ls -lh instaladores >> build.log 2>&1 || true
+          if [ "$COUNT" -ne 19 ]; then
+            echo "EXPECTED=19" >> build_status.txt
+          fi
+      - name: Publicar resultado y diagnóstico
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- instaladores/*.apk
-          git commit -m "Publicar 19 APK docentes" || exit 0
+          git add -- build_status.txt build.log
+          if compgen -G 'instaladores/*.apk' > /dev/null; then git add -- instaladores/*.apk; fi
+          git commit -m "Resultado compilación APK docentes" || exit 0
           git push origin HEAD:build-android-apk
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: Instaladores-Android-Docentes-CyF-02-2026
-          path: instaladores/*.apk
+          path: |
+            instaladores/*.apk
+            build_status.txt
+            build.log
+          if-no-files-found: warn
           retention-days: 30
