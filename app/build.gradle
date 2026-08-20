@@ -1,0 +1,124 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'bo.edu.uatf.cyf.horario'
+    compileSdk 35
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    defaultConfig {
+        applicationId 'bo.edu.uatf.cyf.horario'
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName '1.0.0'
+    }
+
+    flavorDimensions 'docente'
+    productFlavors {
+        albertoMoralesColque {
+            dimension 'docente'
+            applicationIdSuffix '.albertomoralescolque'
+            manifestPlaceholders = [appName: 'Horario - Lic. Alberto Morales Colque']
+        }
+        alexMedinaceli {
+            dimension 'docente'
+            applicationIdSuffix '.alexmedinaceli'
+            manifestPlaceholders = [appName: 'Horario - Lic. Alex Medinaceli']
+        }
+        anaMariaOros {
+            dimension 'docente'
+            applicationIdSuffix '.anamariaoros'
+            manifestPlaceholders = [appName: 'Horario - Lic. Ana Maria Oros']
+        }
+        celsoFuertes {
+            dimension 'docente'
+            applicationIdSuffix '.celsofuertes'
+            manifestPlaceholders = [appName: 'Horario - Lic. Celso Fuertes']
+        }
+        davidOrtunoChicchi {
+            dimension 'docente'
+            applicationIdSuffix '.davidortunochicchi'
+            manifestPlaceholders = [appName: 'Horario - Lic. David Ortuño Chicchi']
+        }
+        edgarSuarezChumacero {
+            dimension 'docente'
+            applicationIdSuffix '.edgarsuarezchumacero'
+            manifestPlaceholders = [appName: 'Horario - Lic. Edgar Suarez Chumacero']
+        }
+        edgarVillaroel {
+            dimension 'docente'
+            applicationIdSuffix '.edgarvillaroel'
+            manifestPlaceholders = [appName: 'Horario - Lic. Edgar Villaroel']
+        }
+        freddyGuzman {
+            dimension 'docente'
+            applicationIdSuffix '.freddyguzman'
+            manifestPlaceholders = [appName: 'Horario - Lic. Freddy Guzman']
+        }
+        freddyRomay {
+            dimension 'docente'
+            applicationIdSuffix '.freddyromay'
+            manifestPlaceholders = [appName: 'Horario - Lic. Freddy Romay']
+        }
+        garyAlvarez {
+            dimension 'docente'
+            applicationIdSuffix '.garyalvarez'
+            manifestPlaceholders = [appName: 'Horario - Lic. Gary Alvarez']
+        }
+        germanHinojosa {
+            dimension 'docente'
+            applicationIdSuffix '.germanhinojosa'
+            manifestPlaceholders = [appName: 'Horario - Lic. German Hinojosa']
+        }
+        gueryAguirreMontes {
+            dimension 'docente'
+            applicationIdSuffix '.gueryaguirremontes'
+            manifestPlaceholders = [appName: 'Horario - Lic. Guery Aguirre Montes']
+        }
+        herbertFlores {
+            dimension 'docente'
+            applicationIdSuffix '.herbertflores'
+            manifestPlaceholders = [appName: 'Horario - Lic. Herbert Flores']
+        }
+        joseLuisRoman {
+            dimension 'docente'
+            applicationIdSuffix '.joseluisroman'
+            manifestPlaceholders = [appName: 'Horario - Lic. Jose Luis Roman']
+        }
+        juanCarlosLopezFlores {
+            dimension 'docente'
+            applicationIdSuffix '.juancarloslopezflores'
+            manifestPlaceholders = [appName: 'Horario - Lic. Juan Carlos Lopez Flores']
+        }
+        juanEduardoChaconDuran {
+            dimension 'docente'
+            applicationIdSuffix '.juaneduardochaconduran'
+            manifestPlaceholders = [appName: 'Horario - Lic. Juan Eduardo Chacon Duran']
+        }
+        justoRufinoGalan {
+            dimension 'docente'
+            applicationIdSuffix '.justorufinogalan'
+            manifestPlaceholders = [appName: 'Horario - Lic. Justo Rufino Galan']
+        }
+        ruthMamani {
+            dimension 'docente'
+            applicationIdSuffix '.ruthmamani'
+            manifestPlaceholders = [appName: 'Horario - Lic. Ruth Mamani']
+        }
+        teofiloLlanosChipana {
+            dimension 'docente'
+            applicationIdSuffix '.teofilollanoschipana'
+            manifestPlaceholders = [appName: 'Horario - Lic. Teofilo Llanos Chipana']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
