@@ -1,0 +1,1 @@
+Workflow v2 ya disponible en main. Iniciar compilación definitiva.
