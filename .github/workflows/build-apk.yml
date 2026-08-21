@@ -1,4 +1,4 @@
-name: Compilar 19 APK docentes v2 pedagógicos
+name: Compilar 19 APK docentes directos C&F
 
 on:
   workflow_dispatch:
@@ -25,37 +25,23 @@ jobs:
           java-version: '17'
       - uses: android-actions/setup-android@v3
       - name: Instalar SDK Android
-        id: sdk
-        continue-on-error: true
-        run: sdkmanager "platforms;android-35" "build-tools;35.0.0" > sdk_v2.log 2>&1
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
-      - name: Reconstruir y extraer proyecto Android v2 final
-        shell: bash
-        run: |
-          set -e
-          if compgen -G 'proyecto_android_v2_final.b64.part*' > /dev/null; then
-            cat proyecto_android_v2_final.b64.part* | base64 -d > proyecto_android_v2_final.zip
-          fi
-          unzip -t proyecto_android_v2_final.zip
-          rm -rf proyecto_v2
-          mkdir proyecto_v2
-          unzip -q proyecto_android_v2_final.zip -d proyecto_v2
-      - name: Compilar APK v2
+      - name: Compilar directamente los 19 APK
         shell: bash
         run: |
           set -o pipefail
-          cd proyecto_v2
-          gradle :app:assembleDebug --stacktrace 2>&1 | tee ../build_v2.log
+          gradle :app:assembleDebug --stacktrace 2>&1 | tee build_v2.log
       - name: Reunir y validar 19 instaladores
         shell: bash
         run: |
           rm -rf instaladores_v2
           mkdir -p instaladores_v2
-          find proyecto_v2/app/build/outputs/apk -type f -name '*-debug.apk' -exec cp {} instaladores_v2/ \;
+          find app/build/outputs/apk -type f -name '*-debug.apk' -exec cp {} instaladores_v2/ \;
           COUNT=$(find instaladores_v2 -type f -name '*.apk' | wc -l)
-          printf "SUCCESS\napk_count=%s\nversion=2.1.1\n" "$COUNT" > build_status_v2.txt
+          printf "SUCCESS\napk_count=%s\nversion=2.2.0-direct\n" "$COUNT" > build_status_v2.txt
           ls -lh instaladores_v2
           test "$COUNT" -eq 19
       - name: Publicar resultado en rama de compilación
@@ -65,12 +51,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -- build_status_v2.txt build_v2.log instaladores_v2/*.apk
-          git commit -m "Resultado compilación APK docentes v2.1.1" || exit 0
+          git commit -m "Resultado compilación APK docentes v2.2" || exit 0
           git push origin HEAD:build-android-apk
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: APK-Docentes-CyF-02-2026-v2.1.1
+          name: APK-Docentes-CyF-02-2026-v2.2
           path: |
             instaladores_v2/*.apk
             build_status_v2.txt
