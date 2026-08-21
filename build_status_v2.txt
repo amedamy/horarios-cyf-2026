@@ -1,0 +1,3 @@
+SUCCESS
+apk_count=19
+version=2.2.0-direct
