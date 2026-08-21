@@ -1,4 +1,4 @@
-name: Compilar 19 APK docentes v2 pedagógicos
+name: Compilar 19 APK docentes directos C&F
 
 on:
   workflow_dispatch:
@@ -23,62 +23,37 @@ jobs:
           java-version: '17'
       - uses: android-actions/setup-android@v3
       - name: Instalar SDK Android
-        id: sdk
-        continue-on-error: true
-        run: sdkmanager "platforms;android-35" "build-tools;35.0.0" > sdk_v2.log 2>&1
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
-      - name: Extraer proyecto pedagógico v2
-        run: |
-          rm -rf proyecto_v2
-          mkdir proyecto_v2
-          unzip -q proyecto_pedagogico_v2.zip -d proyecto_v2
-      - name: Compilar APK v2 y guardar diagnóstico
-        id: compile
+      - name: Compilar directamente los 19 APK
         shell: bash
         run: |
-          set +e
-          cd proyecto_v2
-          gradle :app:assembleDebug --stacktrace > ../build_v2.log 2>&1
-          CODE=$?
-          cd ..
-          echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
-          if [ "$CODE" -eq 0 ]; then
-            echo "SUCCESS" > build_status_v2.txt
-          else
-            echo "FAILED exit_code=$CODE" > build_status_v2.txt
-          fi
-          if [ -f sdk_v2.log ]; then
-            echo "" >> build_v2.log
-            echo "===== SDK LOG =====" >> build_v2.log
-            cat sdk_v2.log >> build_v2.log
-          fi
-          exit 0
-      - name: Reunir instaladores
+          set -o pipefail
+          gradle :app:assembleDebug --stacktrace 2>&1 | tee build_v2.log
+      - name: Reunir y validar instaladores
         shell: bash
         run: |
           rm -rf instaladores_v2
           mkdir -p instaladores_v2
-          find proyecto_v2/app/build/outputs/apk -type f -name '*-debug.apk' -exec cp {} instaladores_v2/ \; 2>/dev/null || true
+          find app/build/outputs/apk -type f -name '*-debug.apk' -exec cp {} instaladores_v2/ \;
           COUNT=$(find instaladores_v2 -type f -name '*.apk' | wc -l)
-          echo "apk_count=$COUNT" >> build_status_v2.txt
-          echo "version=2.0.0" >> build_status_v2.txt
-          ls -lh instaladores_v2 >> build_v2.log 2>&1 || true
-          if [ "$COUNT" -ne 19 ]; then echo "EXPECTED=19" >> build_status_v2.txt; fi
-      - name: Publicar resultado
+          printf "SUCCESS\napk_count=%s\nversion=2.2.0-direct\n" "$COUNT" > build_status_v2.txt
+          ls -lh instaladores_v2
+          test "$COUNT" -eq 19
+      - name: Publicar los 19 APK en la rama
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- build_status_v2.txt build_v2.log
-          if compgen -G 'instaladores_v2/*.apk' > /dev/null; then git add -- instaladores_v2/*.apk; fi
-          git commit -m "Resultado compilación APK docentes v2 pedagógicos" || exit 0
+          git add -- build_status_v2.txt build_v2.log instaladores_v2/*.apk
+          git commit -m "Publicar 19 APK docentes directos v2.2" || exit 0
           git push origin HEAD:build-android-apk
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: APK-Docentes-CyF-02-2026-v2-Pedagogicos
+          name: APK-Docentes-CyF-02-2026-v2.2
           path: |
             instaladores_v2/*.apk
             build_status_v2.txt
