@@ -1,0 +1,1 @@
+Preparación de workflow para reconstruir el proyecto Android v2 desde partes base64 y compilar 19 APK.
